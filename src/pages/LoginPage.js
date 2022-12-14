@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 // @mui
 import { styled } from '@mui/material/styles';
-import { Link, Container, Typography, Divider, Stack, Button } from '@mui/material';
+import {Link, Container, Typography, Divider, Stack, Button, IconButton, Badge} from '@mui/material';
 // hooks
 import useResponsive from '../hooks/useResponsive';
 // components
@@ -46,7 +46,7 @@ export default function LoginPage() {
   return (
     <>
       <Helmet>
-        <title> Login | Minimal UI </title>
+        <title> 로그인 | 머니핏 </title>
       </Helmet>
 
       <StyledRoot>
@@ -70,7 +70,7 @@ export default function LoginPage() {
         <Container maxWidth="sm">
           <StyledContent>
             <Typography variant="h4" gutterBottom>
-              Sign in to Minimal
+              Sign in to Moneyfit
             </Typography>
 
             <Typography variant="body2" sx={{ mb: 5 }}>
@@ -79,17 +79,22 @@ export default function LoginPage() {
             </Typography>
 
             <Stack direction="row" spacing={2}>
-              <Button fullWidth size="large" color="inherit" variant="outlined">
-                <Iconify icon="eva:google-fill" color="#DF3E30" width={22} height={22} />
+              <Button style={{width:'100%'}}>
+                <img src="/assets/icons/kakao_login_medium_narrow.png"/>
               </Button>
 
-              <Button fullWidth size="large" color="inherit" variant="outlined">
-                <Iconify icon="eva:facebook-fill" color="#1877F2" width={22} height={22} />
-              </Button>
 
-              <Button fullWidth size="large" color="inherit" variant="outlined">
-                <Iconify icon="eva:twitter-fill" color="#1C9CEA" width={22} height={22} />
-              </Button>
+              {/*<Button fullWidth size="large" color="inherit" variant="outlined">*/}
+              {/*  <Iconify icon="eva:google-fill" color="#DF3E30" width={22} height={22} />*/}
+              {/*</Button>*/}
+
+              {/*<Button fullWidth size="large" color="inherit" variant="outlined">*/}
+              {/*  <Iconify icon="eva:facebook-fill" color="#1877F2" width={22} height={22} />*/}
+              {/*</Button>*/}
+
+              {/*<Button fullWidth size="large" color="inherit" variant="outlined">*/}
+              {/*  <Iconify icon="eva:twitter-fill" color="#1C9CEA" width={22} height={22} />*/}
+              {/*</Button>*/}
             </Stack>
 
             <Divider sx={{ my: 3 }}>

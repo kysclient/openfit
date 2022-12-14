@@ -13,9 +13,7 @@ NavSection.propTypes = {
 };
 
 export default function NavSection({ data = [], ...other }) {
-    useEffect(() => {
-        console.log('data : ', data)
-    }, [data])
+
   return (
     <Box {...other}>
       <List disablePadding sx={{ p: 1 }}>

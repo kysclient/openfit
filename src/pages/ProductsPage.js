@@ -24,7 +24,7 @@ export default function ProductsPage() {
   return (
     <>
       <Helmet>
-        <title> Dashboard: Products | Minimal UI </title>
+        <title> 투자 정보공유 플랫폼 | 머니핏 </title>
       </Helmet>
 
       <Container>

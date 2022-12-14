@@ -28,10 +28,11 @@ export default function BlogPostsSearch({ posts }) {
       options={posts}
       getOptionLabel={(post) => post.title}
       isOptionEqualToValue={(option, value) => option.id === value.id}
+      noOptionsText={"검색 결과가 없습니다"}
       renderInput={(params) => (
         <TextField
           {...params}
-          placeholder="Search post..."
+          placeholder="검색"
           InputProps={{
             ...params.InputProps,
             startAdornment: (

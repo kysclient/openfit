@@ -7,14 +7,15 @@ import { Grid, Button, Container, Stack, Typography } from '@mui/material';
 import Iconify from '../components/iconify';
 import { BlogPostCard, BlogPostsSort, BlogPostsSearch } from '../sections/@dashboard/blog';
 // mock
-import POSTS from '../_mock/blog';
+import POSTS from '../_mock/invests';
+import DataCard from "../sections/@dashboard/blog/BlogPostCard";
 
 // ----------------------------------------------------------------------
 
 const SORT_OPTIONS = [
-  { value: 'latest', label: 'Latest' },
-  { value: 'popular', label: 'Popular' },
-  { value: 'oldest', label: 'Oldest' },
+  { value: 'latest', label: '최신순' },
+  { value: 'popular', label: '인기순' },
+  { value: 'oldest', label: '오래된' },
 ];
 
 // ----------------------------------------------------------------------
@@ -23,7 +24,7 @@ export default function BlogPage() {
   return (
     <>
       <Helmet>
-        <title> Dashboard: Blog | Minimal UI </title>
+        <title> 주식투자는 | 머니핏 </title>
       </Helmet>
 
       <Container>
@@ -32,7 +33,7 @@ export default function BlogPage() {
             주식
           </Typography>
           <Button variant="contained" startIcon={<Iconify icon="eva:plus-fill" />}>
-            New Post
+            글쓰기
           </Button>
         </Stack>
 
@@ -43,7 +44,7 @@ export default function BlogPage() {
 
         <Grid container spacing={3}>
           {POSTS.map((post, index) => (
-              <BlogPostCard key={post.id} post={post} index={index} />
+              <DataCard key={post.id} post={post} index={index} />
           ))}
         </Grid>
       </Container>
