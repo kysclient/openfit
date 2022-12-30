@@ -34,6 +34,11 @@ NavItem.propTypes = {
 function NavItem({ item }) {
   const { title, path, icon, info } = item;
 
+  useEffect(() => {
+      console.log('item : ', item)
+  }, [item])
+
+
   return (
     <StyledNavItem
       component={RouterLink}
@@ -46,7 +51,10 @@ function NavItem({ item }) {
         },
       }}
     >
-      <StyledNavItemIcon>{icon && icon}</StyledNavItemIcon>
+      <StyledNavItemIcon>
+          {icon && icon}
+
+      </StyledNavItemIcon>
 
         <ListItemText disableTypography primary={title} />
 

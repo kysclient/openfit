@@ -91,7 +91,7 @@ export default function Header({ onOpenNav }) {
                 {mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon sx={{color:'#637381'}} />}
             </IconButton>
 
-          <LanguagePopover />
+          {/*<LanguagePopover />*/}
           <NotificationsPopover />
           <AccountPopover />
         </Stack>

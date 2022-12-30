@@ -10,7 +10,7 @@ import typography from './typography';
 import GlobalStyles from './globalStyles';
 import customShadows from './customShadows';
 import componentsOverride from './overrides';
-import {useRecoilState} from "recoil";
+import {useRecoilState, useRecoilValue} from "recoil";
 import {themeState} from "../atoms/themeState";
 
 // ----------------------------------------------------------------------
@@ -20,7 +20,7 @@ ThemeProvider.propTypes = {
 };
 
 export default function ThemeProvider({ children }) {
-    const [mode, setMode] = useRecoilState(themeState);
+    const mode = useRecoilValue(themeState);
 
     const themeOptions = useMemo(
     () => ({

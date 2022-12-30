@@ -81,6 +81,8 @@ const Logo = forwardRef(({ disabledLink = false, sx, ...other }, ref) => {
   return (
     <Link to="/" component={RouterLink} sx={{ display: 'contents' }}>
       {logo}
+      {/*로고만들어주실분*/}
+
     </Link>
   );
 });

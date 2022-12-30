@@ -3,22 +3,32 @@ import SvgColor from '../../../components/svg-color';
 
 // ----------------------------------------------------------------------
 
-const icon = (name) => <SvgColor src={`/assets/icons/navbar/${name}.svg`} sx={{ width: 1, height: 1 }} />;
-
+// const icon = (name) => <SvgColor src={`/assets/icons/navbar/${name}.svg`} sx={{ width: 1, height: 1 }} />;
+const icon = (name) => {
+  switch (name) {
+    case 'meet': return <>❤️</>
+    default: return <>🖤</>
+  }
+}
 const navConfig = [
   {
-    title: '주식',
-    path: '/home/app',
+    title: '모임',
+    path: '/meet',
+    icon: icon('meet'),
+  },
+  {
+    title: '내 모임',
+    path: '/met',
     icon: icon('ic_analytics'),
   },
   {
-    title: '코인',
-    path: '/home/user',
+    title: '자랑하기',
+    path: '/we',
     icon: icon('ic_user'),
   },
   {
-    title: '집',
-    path: '/home/products',
+    title: '홍보하기',
+    path: '/promotion',
     icon: icon('ic_cart'),
   },
   // {

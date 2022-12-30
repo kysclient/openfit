@@ -30,10 +30,11 @@ export default function BlogPage() {
       <Container>
         <Stack direction="row" alignItems="center" justifyContent="space-between" mb={5}>
           <Typography variant="h4" gutterBottom>
-            주식
+            🔥 김유신 님을 위한 맞춤 모임!
+
           </Typography>
           <Button variant="contained" startIcon={<Iconify icon="eva:plus-fill" />}>
-            글쓰기
+            모임 등록하기
           </Button>
         </Stack>
 

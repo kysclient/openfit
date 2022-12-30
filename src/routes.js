@@ -9,21 +9,23 @@ import LoginPage from './pages/LoginPage';
 import Page404 from './pages/Page404';
 import ProductsPage from './pages/ProductsPage';
 import DashboardAppPage from './pages/DashboardAppPage';
+import PromotionPage from "./pages/PromotionPage";
 
 // ----------------------------------------------------------------------
 
 export default function Router() {
   const routes = useRoutes([
     {
-      path: '/home',
+      path: '/',
       element: <DashboardLayout />,
       children: [
-        { element: <Navigate to="/home/app" />, index: true },
+        { element: <Navigate to="/meet" />, index: true },
         // { path: 'app', element: <DashboardAppPage /> },
-        { path: 'app', element: <BlogPage /> },
+        { path: '/meet', element: <BlogPage /> },
+        { path: '/met', element: <BlogPage /> },
         // { path: 'user', element: <UserPage /> },
-        { path: 'user', element: <ProductsPage /> },
-        { path: 'products', element: <ProductsPage /> },
+        { path: 'we', element: <ProductsPage /> },
+        { path: 'promotion', element: <PromotionPage /> },
         { path: 'blog', element: <BlogPage /> },
       ],
     },
@@ -34,7 +36,7 @@ export default function Router() {
     {
       element: <SimpleLayout />,
       children: [
-        { element: <Navigate to="/home/app" />, index: true },
+        { element: <Navigate to="/" />, index: true },
         { path: '404', element: <Page404 /> },
         { path: '*', element: <Navigate to="/404" /> },
       ],

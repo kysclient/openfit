@@ -67,7 +67,7 @@ export default function Nav({ openNav, onCloseNav }) {
               </Typography>
 
               <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                투자자
+                관리자
               </Typography>
             </Box>
           </StyledAccount>
@@ -88,11 +88,11 @@ export default function Nav({ openNav, onCloseNav }) {
 
           <Box sx={{ textAlign: 'center' }}>
             <Typography gutterBottom variant="h6">
-              ㅋㅋㅋ
+              관리자
             </Typography>
 
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              ㅎㅎㅎㅎㅎ
+              궁금하신점이 있으시면 여쭤보세요
             </Typography>
           </Box>
 

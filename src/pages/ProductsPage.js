@@ -24,12 +24,12 @@ export default function ProductsPage() {
   return (
     <>
       <Helmet>
-        <title> 투자 정보공유 플랫폼 | 머니핏 </title>
+        <title> 오픈톡 공유 플랫폼 | 오픈핏 </title>
       </Helmet>
 
       <Container>
         <Typography variant="h4" sx={{ mb: 5 }}>
-          코인
+          ㅎㅎ
         </Typography>
 
         <Stack direction="row" flexWrap="wrap-reverse" alignItems="center" justifyContent="flex-end" sx={{ mb: 5 }}>
